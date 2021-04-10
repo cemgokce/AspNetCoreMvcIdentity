@@ -1,0 +1,23 @@
+﻿@model AspNetCoreMvcIdetity.Models.Security.LoginViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+</head>
+<body>
+
+    <h4>Login</h4>
+    <form asp-controller="Security" asp-action="Login" method="post">
+        <div asp-validation-summary="All"></div>
+        <input type="text"  value="" asp-for="Username" placeholder="UserName" />
+        <input type="password"  value="" asp-for="Password" placeholder="Password" />
+        <input type="submit" value="Login" />
+    </form>
+</body>
+</html>
